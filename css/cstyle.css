@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize; 
+    
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+.heading p a {
+    color: #000000;
+}
+
+.heading p a:hover {
+    color: #333;
+}
+
+.title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #000000;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-right: auto;
+}
+.header .logo:hover{
+    border-top: 2px solid white;   
+    border-bottom: 2px solid white;
+   
+}
+
+.header .navbar ul {
+    list-style: none;
+}
+
+.header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.header .navbar ul li:hover ul {
+    display: block;
+}
+
+.header .navbar ul li a {
+    font-size: 1.7rem;
+    color: #ffffff;
+    padding: 2rem;
+    display: block;
+}
+
+.header .navbar ul li a:hover {
+   color:red;
+   border-bottom: 3px solid #ffffff;
+   background: transparent;
+
+}
+
+.header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    /* width: 20rem; */
+    background:#000000;
+    display: none;
+}
+
+.header .navbar ul li ul li {
+    width: 100%;
+    font-weight: 900;
+}
+.header .navbar ul li ul li :hover{
+   color: #ff0000;
+   border-bottom: 3px solid #ffffff;
+   font-weight: 900;
+    
+}
+
+.sectionheader{
+	margin-top: 2%;
+	color: #ffffff;
+	font-size: 2.5em;
+	text-align: center;
+	border: 1px solid #000000;
+	background-color: #8b8585;
+	box-shadow: 1px 2px black;
+}
+
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+    font-size: 4.5em;
+}
+
+
+.row{
+	margin-left: 60%;
+	display: inline-block;
+}
+.col-md-3 {
+	margin-top: 5%;
+	margin-left: 7%;
+	display: inline-block;
+    padding: 1px;      
+    width: 350px;
+	height: 380px;    
+    border: 2px solid black;   
+    align-content: left;
+	
+}
+.col-md-3:hover {
+	box-shadow: 1px 1px 10px red;
+	
+}
+
+.product-top img
+{
+	width: 100%;
+	height: 200px;
+	
+}
+
+.product-top img:hover
+{
+	box-shadow: 1px 1px 10px rgb(0, 0, 0);	
+}
+.product-bottom h3
+{
+	font-size: 20px;
+	padding-bottom: 10px; 
+}
+.product-image {
+	width: 100%;
+	padding: 20px 0;
+	transition: 1s;
+	cursor: pointer;
+	height: 300px;
+	overflow: hidden;
+	
+}
+.product-description {	
+	color: black;
+	border-radius: 5px;
+	align-content: center;
+}
+.product-name {
+	text-align: center;
+	color: black;
+	margin: 0;
+	font-size: 1em;	
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.product-price {	
+	margin-top: 2%;
+	font-size: 1.5em;
+	text-align: center;	
+	background: #fff;
+	color: black;	
+	font-weight: bold;
+	
+	
+	
+}
+form.add-to-cart div
+{
+	text-align: right;
+	color: black;	
+	
+}
+form.add-to-cart p 
+{
+	text-align: left;
+	
+	color: #000000;
+}
+form.add-to-cart p .btn
+{
+	text-align: center;	
+	color: white;
+	background: rgb(0, 0, 0);
+	margin-top: 6%;
+	margin-bottom: 40px;
+	border-radius: .3em;    
+    width: 150px;
+    height: 40px;
+	margin-left: 13%;
+	padding: 10px;
+	font-size: 15px;
+}
+form.add-to-cart p .btn:hover
+{	
+	border: 1px solid rgb(0, 0, 0);
+	box-shadow:1px 3px  black;
+	background-color: white;
+	color: rgb(0, 0, 0);
+}
+
+.qunatity{
+	margin-right: 19%;
+	font-size: 15px;
+	font-weight: bold;
+		
+}
+form input.qty {
+	width: 40px;
+	color: #000000;
+	border-radius: 3px;	
+	font: 2rem;	
+	font-weight: bold;
+	border-bottom:1px solid #000000;
+	align-content: center;
+	
+	
+}
+
+#site {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+.btn{
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid black;
+	width: 100px;
+	height: 40px;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 3px;
+	font-size: 15px;
+}
+
+.btn:hover{
+	border: 1px solid rgb(0, 0, 0);
+	box-shadow:1px 3px  black;
+	background-color: white;
+	color: rgb(0, 0, 0);
+	
+}
+a.btnm{
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid black;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 3px;
+	padding: 8.5px;
+	font-size: 15px;
+}
+.btnm:hover{
+	border: 1px solid rgb(0, 0, 0);
+	box-shadow:1px 3px  black;
+	background-color: white;
+	color: rgb(0, 0, 0);
+	
+}
+
+
+body#checkout-page #site-info {
+	position: static;
+}
+
+#shopping-cart {
+	margin: 1.5em 0;
+}
+
+.shopping-cart {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.shopping-cart th {
+	font-size: 1.5em;
+	padding: 0.3em;
+	width: 25%;
+	border: 1px solid #ddd;
+	text-transform: uppercase;
+	
+}
+
+.shopping-cart td {
+	padding: 0.3em;
+	width: 33.3%;
+	border: 1px solid #ddd;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.shopping-cart tr:nth-child(even) {
+	background: #fafafa;
+}
+
+.shopping-cart td.pdelete {
+	text-align: center;
+}
+
+.pdelete a,
+.pdelete a:hover {
+	color: #c00;
+	text-decoration: none;
+	font-size: 2.5em;
+	display: block;
+	text-align: center;
+}
+
+#shopping-cart-actions {
+	margin: 1.5em 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#shopping-cart-actions li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+#pricing {
+	padding: 0.5em;
+	margin: 1em 0;
+	background: #fafafa;
+}
+
+#sub-total, #shipping {
+	margin: 1.5em 0;
+	text-align: right;
+	font-size: 2em;
+	
+}
+
+#sub-total span,
+#shipping span {
+	margin-left: 1em;
+}
+
+#content > h1,
+#checkout-order-form h2 {
+	font-size: 4em;
+	
+	text-align: center;
+}
+
+#pricing #sub-total,
+#pricing #shipping {
+	margin: 1em 0;
+	
+}
+
+#checkout-order-form {
+	margin: 1.5em 0;
+}
+
+#checkout-order-form fieldset {
+	display:block;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 1em;
+	margin-bottom: 1.3em;
+}
+
+#checkout-order-form legend {
+	padding: 0.3em;
+	background: #fafafa;
+	font-weight: bold;
+}
+
+#checkout-order-form div {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+#checkout-order-form label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.3em;
+	text-align: left;
+}
+
+#checkout-order-form input[type="text"] {
+	width: 200px;
+	display: block;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 0.1em;
+}
+
+#checkout-order-form select {
+	width: 200px;
+	display: block;
+}
+
+.message {
+	display: block;
+	margin: 0.5em 0;
+	color: red;
+}
+
+#user-details {
+	
+	margin: 1.5em 0;
+}
+
+#user-details > h2 {
+	text-align: center;
+	font-size: 2em;
+}
+
+#user-details-content {
+	margin: 1.5em 0;
+	padding: 1em;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	overflow: hidden;
+	
+}
+
+#user-details-content .detail {
+	float: left;
+	width: 46%;
+}
+
+#user-details-content .detail.right {
+	float: right;
+}
+
+#user-details-content .detail > h2 {
+	font-size: 1.6em;
+	margin-bottom: 0.5em;
+}
+
+#user-details-content ul {
+	margin: 0 0 1em 0;
+	padding: 0;
+	list-style: none;
+}
+
+#user-details-content li {
+	display: block;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #ddd;
+}
+.bak a{
+	margin-left: 45%;
+	text-decoration: none;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid black;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 3px;
+	padding: 8.5px;
+	font-size: 15px;
+}
+
+.bak a:hover{
+	border: 1px solid rgb(0, 0, 0);
+	box-shadow:1px 3px  black;
+	background-color: white;
+	color: rgb(0, 0, 0);
+	
+}
+
+.detail{
+	font-size: 1.5rem;;
+	font-weight: bold;
+}
+
+#shipping-same{
+	font-size: 1.6em;
+}
+
+#paypal-form {
+	margin: 1.5em 0;
+}
+
+    
+
+
